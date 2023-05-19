@@ -1,9 +1,8 @@
 from django.contrib import admin
-from .models import Student
+from curd import models
 # Register your models here.
 
 
-@admin.register(Student)
+@admin.register(models.Student)
 class StudentAdmin(admin.ModelAdmin):
-    list_display = [
-        'id','name','roll',]
+    list_display = ['id','name','roll']
