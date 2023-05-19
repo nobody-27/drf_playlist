@@ -1,0 +1,9 @@
+The ModelSerilizers class provides a shoutcut that lets you automatically create a ModelSerilizers
+class with Fields that Correspond to the model Fields
+
+The ModelSerilizers class is the same as a regular Serilizer class, except that:
+* it will automatically generate a set of Fields for you based on the model.
+* it will automatically generate validations for the Serilizer such as unique_together validators.
+* It include simple default implementations of create() and update().
+
+
