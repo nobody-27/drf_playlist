@@ -13,6 +13,7 @@ from django.views.decorators.csrf import csrf_exempt
 def student_api_curd(request):
     if request.method == "GET":
         json_data = request.body
+        print(json_data,"JSON DATA")
         stream = io.BytesIO(json_data)
         python_data = JSONParser().parse(stream)
         id = python_data.get('id',None)
@@ -31,13 +32,10 @@ def student_api_curd(request):
         json_data = request.body
         strame = io.BytesIO(json_data)
         python_data = JSONParser().parse(strame)
-        
-        print(type(python_data),"This is type.......")
-
         serilizer = StudentSerilizer(data=python_data)
         if serilizer.is_valid():
             serilizer.save()
-            message = {'msg':'Data created'}
+            message = {'msg':'Data created','json_data':python_data}
             json_data = JSONRenderer().render(message)
             return HttpResponse(json_data,content_type ='application/json')
         

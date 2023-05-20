@@ -39,8 +39,16 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'api',
     'rest_framework',
+
+    
     'curd',
     'model_serilizers',
+    'function_based',
+    'class_based_APIVIEW',
+    'GENERIC_API_VIEW',
+    
+    
+
 ]
 
 MIDDLEWARE = [
@@ -128,8 +136,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
-REST_FRAMEWORK = {
-'DEFAULT_AUTHENTICATION_CLASSES': (
-    'rest_framework.permissions.AllowAny',
-)
-}

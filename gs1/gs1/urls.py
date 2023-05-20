@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.urls import path,include
 
 urlpatterns = [
-
     path('admin/', admin.site.urls),
     path('api/', include('api.urls')),
     path('', include('curd.urls')),
-    
+    path('model_serilizers/', include('model_serilizers.urls')),
+    path('function/',include('function_based.urls')),
+    path('class/',include('class_based_APIVIEW.urls')),
 ]

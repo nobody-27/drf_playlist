@@ -7,3 +7,6 @@ The ModelSerilizers class is the same as a regular Serilizer class, except that:
 * It include simple default implementations of create() and update().
 
 
+ModelSerilizers Me Create or Update function manual nhi likh na padta hai.
+
+
