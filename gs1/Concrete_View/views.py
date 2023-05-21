@@ -2,6 +2,8 @@ from django.shortcuts import render
 from function_based.models import NoteBook
 from rest_framework.generics import ListAPIView,CreateAPIView,RetrieveAPIView,UpdateAPIView,DestroyAPIView,ListCreateAPIView,RetrieveUpdateAPIView,RetrieveDestroyAPIView
 from function_based.serializers import NoteBookSerializers
+from rest_framework.generics import GenericAPIView
+from django.shortcuts import get_object_or_404
 # Create your views here.
 
 class Concrete_Notebook_list(ListAPIView):
