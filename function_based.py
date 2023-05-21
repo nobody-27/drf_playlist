@@ -1,8 +1,7 @@
 import requests
 import json
-# URL = "http://127.0.0.1:8000/model_serilizers/model_serilizers_curd_operation/"
 
-URL = "http://127.0.0.1:8000/function/function_based/"
+URL = "http://127.0.0.1:8000/function/notebook_api/"
 
 def get_data(id = None):
     data = {} 
@@ -16,18 +15,16 @@ def get_data(id = None):
     data = r.json()
     print(data)
 
-get_data()
-
+# get_data()
 def post_data():
     data = {
-        'name':"323423",
+        'name':"SAMA",
         'roll':2000,
         'city':"Dhanbad"
     }
     headers = {
         'content-Type':'application/json'
     }
-
     json_data = json.dumps(data)
     r = requests.post(url=URL,headers=headers,data=json_data)
     data = r.json()
@@ -35,28 +32,34 @@ def post_data():
 
 # post_data()
 
+
 def update_data():
+    headers = {
+        'content-Type':'application/json'
+    }
     data = {
-        'id':34,
+        'id':2,
         'name':"same",
         'roll':1211,
         'city':"Dhanbad"
     }
     json_data = json.dumps(data)
-    r = requests.put(url=URL,data=json_data)
+    r = requests.put(url=URL,headers=headers,data=json_data)
     data = r.json()
     print(data,"update data")
 
 # update_data()
 
-
 def delete_data():
+    headers = {
+        'content-Type':'application/json'
+    }
     data = {
-        'id':4
+        'id':2
     }
     json_data = json.dumps(data)
-    r = requests.delete(url=URL,data=json_data)
+    r = requests.delete(url=URL,headers=headers,data=json_data)
     data = r.json()
     print(data)
 
-# delete_data()
+delete_data()
