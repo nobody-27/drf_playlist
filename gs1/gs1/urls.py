@@ -26,4 +26,10 @@ urlpatterns = [
     path('model_view_set/',include('Model_View_Set_last.urls')),
     path('auth_api_all/',include('BasicAuthentication.urls')),
     
+    path('session_auth/',include('Sesstion_Authentication.urls')),
+    path('custom_permission/',include('custom_permission.urls')),
+
+    #by default
+    path('auth/',include('rest_framework.urls',namespace='rest_framework'))
+    
 ]   

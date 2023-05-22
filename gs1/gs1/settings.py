@@ -54,9 +54,10 @@ INSTALLED_APPS = [
     'Model_View_Set_last',
     
 
-    #authentication Staff
+    #authentication and permission related
     'BasicAuthentication',
     'Sesstion_Authentication',
+    'custom_permission',
     
 
 ]
@@ -151,10 +152,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 #Global Settings can be overrided by Local 
 
 
-REST_FRAMEWORK = {
-    'DEFAULT_AUTHENTICATION_CLASSES':['rest_framework.authentication.BasicAuthentication'],
-    'DEFAULT_PERMISSION_CLASSES':['rest_framework.permissions.IsAuthenticated'],
+# REST_FRAMEWORK = {
+#     'DEFAULT_AUTHENTICATION_CLASSES':['rest_framework.authentication.BasicAuthentication'],
+#     'DEFAULT_PERMISSION_CLASSES':['rest_framework.permissions.IsAuthenticated'],
     
 
 
-}
+# }
