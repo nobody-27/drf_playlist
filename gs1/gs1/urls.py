@@ -23,4 +23,5 @@ urlpatterns = [
 
 
     path('viewset/',include(dummy_router.urls)),
+    path('model_view_set/',include('Model_View_Set_last.urls')),
 ]
