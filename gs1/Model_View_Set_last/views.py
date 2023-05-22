@@ -1,8 +1,6 @@
 from django.shortcuts import render
-from rest_framework.response import Response
 from Model_View_Set_last.models import ClassRoom
 from Model_View_Set_last.serializers import ClassRoomSerializer
-from rest_framework import status
 from rest_framework import viewsets
 
 # Create your views here.

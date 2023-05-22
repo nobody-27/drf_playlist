@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'rest_framework',
 
     
+
+
+    #apps name local
     'curd',
     'model_serilizers',
     'function_based',
@@ -50,6 +53,10 @@ INSTALLED_APPS = [
     'ViewSet',
     'Model_View_Set_last',
     
+
+    #authentication Staff
+    'BasicAuthentication',
+    'Sesstion_Authentication',
     
 
 ]
@@ -139,3 +146,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
 
+
+#REST AUTHETICATION PERMISION FOR GLOBAL FOR ALL FUNCTIONS
+#Global Settings can be overrided by Local 
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES':['rest_framework.authentication.BasicAuthentication'],
+    'DEFAULT_PERMISSION_CLASSES':['rest_framework.permissions.IsAuthenticated'],
+    
+
+
+}

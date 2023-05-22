@@ -24,4 +24,6 @@ urlpatterns = [
 
     path('viewset/',include(dummy_router.urls)),
     path('model_view_set/',include('Model_View_Set_last.urls')),
-]
+    path('auth_api_all/',include('BasicAuthentication.urls')),
+    
+]   
