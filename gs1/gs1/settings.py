@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'GENERIC_API_VIEW',
     'Concrete_View',
     'ViewSet',
-    
+    'Model_View_Set_last',
     
     
 
