@@ -54,10 +54,11 @@ INSTALLED_APPS = [
     'Model_View_Set_last',
     
 
-    #authentication and permission related
+    #authentication and permission related apps
     'BasicAuthentication',
     'Sesstion_Authentication',
     'custom_permission',
+    'Token_Authentication',
     
 
 ]
