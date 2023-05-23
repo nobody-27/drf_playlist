@@ -23,4 +23,6 @@ urlpatterns = [
 
 
     path('viewset/',include(dummy_router.urls)),
+
+    path('relation_serilizer/',include('Serilizer_Relations.urls')),
 ]

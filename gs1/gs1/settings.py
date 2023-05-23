@@ -49,6 +49,9 @@ INSTALLED_APPS = [
     'Concrete_View',
     'ViewSet',
     'Model_View_Set_last',
+
+
+    'Serilizer_Relations',
     
     
 
