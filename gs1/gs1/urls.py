@@ -29,6 +29,8 @@ urlpatterns = [
     path('session_auth/',include('Sesstion_Authentication.urls')),
     path('custom_permission/',include('custom_permission.urls')),
 
+    path('token/',include('Token_Authentication.urls')),
+
     #by default
     path('auth/',include('rest_framework.urls',namespace='rest_framework'))
     
